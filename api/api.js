@@ -23,7 +23,6 @@ export const fetchMangas = async () => {
 export const addManga = async (manga_name) => {
   try {
     const url = `/mangas/${manga_name}`; // Construct the URL
-    console.log(`Making POST request to: ${axiosInstance.defaults.baseURL}${url}`); // Log the full URL
     const response = await axiosInstance.post(url);
     return response.data;
   } catch (error) {
@@ -32,4 +31,24 @@ export const addManga = async (manga_name) => {
   }
 };
 
+export const removeManga = async (manga_name) => {
+  try {
+    const url = `/mangas/${manga_name}`; // Construct the URL
+    const response = await axiosInstance.delete(url);
+    return response.data;
+  } catch (error) {
+    console.error('Error removing manga:', error);
+    throw error;
+  }
+};
+
+export const updateMangas = async () => {
+  try {
+    const response = await axiosInstance.put('/mangas');
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching mangas:', error);
+    throw error;
+  }
+};
 

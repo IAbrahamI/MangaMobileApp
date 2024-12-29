@@ -29,14 +29,8 @@ export default function TabLayout() {
         name="index"
         options={{
           title: 'Mangas',
-          tabBarIcon: ({ color }) => <TabBarIcon name="bookmark" color={color} />
-        }}
-      />
-      <Tabs.Screen
-        name="functions_api_page"
-        options={{
-          title: 'Manage',
-          tabBarIcon: ({ color }) => <TabBarIcon name="book" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="bookmark" color={color} />,
+          tabBarStyle: { display: 'none' },
         }}
       />
     </Tabs>

@@ -14,14 +14,16 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.iabrahami.MangaMobileApp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff",
         "usesCleartextTraffic": true
-      }
+      },
+      "package": "com.iabrahami.MangaMobileApp"
     },
     "web": {
       "bundler": "metro",
@@ -33,6 +35,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "f9bfc2ef-356c-465c-b3ef-937a127299c2"
+      }
     }
   }
 }

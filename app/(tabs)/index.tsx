@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   StyleSheet,
   ScrollView,
@@ -12,13 +12,11 @@ import {
   View,
   TextInput,
   Dimensions,
-  Animated,
   ActivityIndicator, // Make sure to import ActivityIndicator
 } from "react-native";
 import { format } from "date-fns";
 import { fetchMangas, addManga, removeManga, updateMangas } from "@/api/api"; // Add removeManga to API
 import Icon from "react-native-vector-icons/MaterialIcons"; // Import trash can icon
-import Svg, { Polygon } from 'react-native-svg';
 
 const { height } = Dimensions.get("window");
 

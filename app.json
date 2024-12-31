@@ -4,24 +4,24 @@
     "slug": "MangaMobileApp",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/playstore-icon.png", 
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "splash": {
       "image": "./assets/images/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#673AB7"
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.iabrahami.MangaMobileApp"
+      "bundleIdentifier": "com.iabrahami.MangaMobileApp",
+      "icon": "./assets/images/app_icon.png" 
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff",
-        "usesCleartextTraffic": true
+        "foregroundImage": "./assets/images/playstore-icon.png",
+        "backgroundColor": "#673AB7"
       },
       "package": "com.iabrahami.MangaMobileApp"
     },

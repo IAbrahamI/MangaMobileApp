@@ -3,7 +3,7 @@ import axios from 'axios';
 
 // Create an Axios instance with the base URL of your FastAPI backend
 const axiosInstance = axios.create({
-  baseURL: 'http://192.168.1.125:8000', // Replace with your FastAPI backend URL
+  baseURL: 'https://mangaapi.aby-host-network.duckdns.org', 
   headers: {
     'Content-Type': 'application/json',
   },
